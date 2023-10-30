@@ -25,7 +25,7 @@ jobs:
         id: pruebas
         run: | 
           export FLASK_APP=src/app.py PYTHONPATH=./ FLASK_ENV=testing TESTING=True FLASK_DEBUG=False FLASK_APP_NAME=md-apisecurity
-          python -m coverage run -m unittest discover tests 
+          python -m coverage run -m unittest discover -v -s src/tests/ -p 'test_*.py' 
           python -m coverage xml -i 
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
