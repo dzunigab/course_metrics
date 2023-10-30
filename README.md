@@ -2,7 +2,7 @@
 
 ## Descripcion 
 
-Incluir la descripción del microservicio md-security (PRUEBA)
+Incluir la descripción del microservicio md-security
 
 ## Ednpoints
 
